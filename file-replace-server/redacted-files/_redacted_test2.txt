@@ -1,0 +1,5 @@
+XXXX sit with us!
+
+XXXX file documentation issues and create pull requests on the Angular Github repository. 
+The contributing guide will help you contribute to the community. 
+Our community values respectful, supportive communication. Please consult and adhere to the code of conduct.

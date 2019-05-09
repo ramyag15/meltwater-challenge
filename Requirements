@@ -1,0 +1,36 @@
+Meltwater Technical Evaluation
+
+The purpose of this assignment is to get a feel for how you approach technical and programming problems.
+There is no ‘right’ or ‘wrong’ answer. Think about the problem and do the best you can,
+and be prepared to talk about the process you followed and any questions or problems you encountered.
+
+Assignment
+
+You work for the CIA. You are given a software engineering assignment related to processing classified documents.
+
+You are given a task to build a web application to process classified documents (text format) and remove censored text.
+
+Definition:
+
+The application will remove given keywords and phrases from document text and insert XXXX at the locations where text was removed.
+
+Input parameters:
+
+1. String of keywords and phrases: a string of censored keywords and phrases separated by spaces or commas.
+Phrases will be enclosed in single or double quotes. Some examples:
+
+Hello world “Boston Red Sox”
+
+‘Pepperoni Pizza’, ‘Cheese Pizza’, beer
+
+2. Document text – the original document text that needs the provided keywords and phrases removed (masked out).
+
+Returns:
+
+Document text with indicated keywords and phrases removed and replaced with XXXX.
+
+Please design and build this web application in a way it can be demoed using Angular and Node.
+There is no request to store data, but feel free to if you choose.
+Be prepared to discuss the design issues and trade-offs you considered.
+
+Please return the project via a github link or attached zip file.

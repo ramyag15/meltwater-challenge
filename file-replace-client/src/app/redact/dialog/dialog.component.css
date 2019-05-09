@@ -1,0 +1,28 @@
+.add-files-btn {
+  float: left;
+}
+
+:host {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.actions {
+  justify-content: flex-end;
+}
+
+.container {
+  height: 100%;
+}
+
+.text-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-full-width {
+  width: 100%;
+}

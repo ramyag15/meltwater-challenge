@@ -1,0 +1,31 @@
+<input type="file" #file style="display: none" (change)="onFilesAdded()" multiple />
+<div class="container" fxLayout="column" fxLayoutAlign="space-evenly stretch">
+  <h1 mat-dialog-title>Redact files</h1>
+
+  <mat-dialog-content fxFlex>
+    <form class="text-form">
+      <mat-form-field class="form-full-width"> 
+          <input matInput [(ngModel)]="replaceString" [ngModelOptions]="{standalone: true}" placeholder="Type words/phrases to redact separated by comma">
+      </mat-form-field>
+    </form>
+
+    <button [disabled]="redacting || redactSuccessful" mat-raised-button color="primary" class="add-files-btn" (click)="addFiles()">
+        Add Files
+    </button>
+    <br><br>
+    <mat-list>
+      <mat-list-item *ngFor="let file of files">
+
+        <h4 class="list-align" mat-line>{{file.name}}</h4>
+
+        <mat-progress-bar *ngIf="progress" mode="determinate" [value]="progress[file.name].progress | async"></mat-progress-bar>
+
+      </mat-list-item>
+    </mat-list>
+  </mat-dialog-content>
+
+  <mat-dialog-actions class="actions">
+    <button *ngIf="showCancelButton" mat-button mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary" [disabled]="!canBeClosed" (click)="closeDialog()">{{primaryButtonText}}</button>
+  </mat-dialog-actions>
+</div>
